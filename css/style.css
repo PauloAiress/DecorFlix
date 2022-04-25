@@ -1,0 +1,184 @@
+:root {
+    --eggshell: rgb(244, 241, 222);
+    --terra-cota: rgb(224, 122, 95);
+    --independence: rgb(61, 64, 91);
+    --green-sheen: rgb(129, 178, 154);
+    --deep-champagne: rgb(242, 204, 143);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* base */
+
+body {
+    background: var(--independence);
+    font-family: 'Rajdhani', sans-serif;
+    color: #FFF;
+}
+
+header {
+    padding: 10px 0px;
+}
+
+header .logo {
+    font-weight: 700;
+    color: var(--terra-cota);
+    font-size: 30px;
+}
+
+header .navbar {
+    margin-right: 10px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--eggshell);
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: #FFF;
+    font-weight: 700;
+}
+
+/* banner principal*/
+
+h2 p {
+    font-weight: 500;
+}
+
+.banner-principal {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url('/img/banner\ 01.jpg');
+
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner-principal .descricao {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.titulo {
+    color: var(--deep-champagne);
+    margin-top: 20%;
+    font-size: 40px;
+}
+
+.botoes {
+    padding-top: 10px;
+    padding-bottom: 15%;
+}
+
+.botao {
+    padding: 12px 24px;
+    margin-right: 15px;
+    border: none;
+
+    background-color: rgba(129, 178, 154, 0.8);
+
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: .25s ease-out;
+}
+
+.botao:hover {
+    background-color: #000;
+    color: var(--green-sheen);
+}
+
+.fa-regular {
+    margin-right: 5px;
+}
+
+/* */
+
+.container {
+    margin-left: 15px;
+}
+
+.banner-principal .container {
+    width: 60%;
+}
+
+.primeiro-titulo {
+    margin-top: -55px;
+}
+
+.box-carrossel {
+    height: 102px;
+    width: 200px;
+    display: flex;
+}
+
+.titulo-carrossel {
+    padding: 12px 0px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.item {
+    position: relative;
+    flex: 1 1 0px;
+    transition: transform 300ms ease 100ms;
+    font-size: 8px;
+    color: var(--independence);
+    font-weight: 500;
+    text-shadow: -1px 0 var(--eggshell), 0 1px var(--eggshell), 1px 0 var(--eggshell), 0 -1px var(--eggshell);
+}
+
+.container .item:hover {
+    transform: scale(1.08);
+}
+
+.item .fa-solid {
+	padding-top: 7px;	
+	padding-right: 7px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: none;
+}
+
+.item .alt-text {
+	padding-bottom: 7px;	
+	padding-left: 14px;
+	position: absolute;
+    left:0;
+    bottom: 0;
+	display: none;
+    font-size: 20px;
+}
+
+.item:hover .fa-solid{
+    display: block;
+}
+
+.item:hover .alt-text{
+    display: block;
+}
+
